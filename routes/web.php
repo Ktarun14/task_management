@@ -30,11 +30,6 @@ Route::middleware('auth')->group(function () {
 
 
 
-Route::get('/api/tasks', [TaskController::class, 'index']);
-Route::post('/api/tasks', [TaskController::class, 'store']);
-Route::put('/api/tasks/{id}', [TaskController::class, 'update']);
-Route::patch('/api/tasks/{id}/toggle-status', [TaskController::class, 'toggleStatus']);
-Route::delete('/api/tasks/{id}', [TaskController::class, 'destroy']);
 
 });
 
